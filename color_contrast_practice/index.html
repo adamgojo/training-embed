@@ -12,5 +12,20 @@
     <script src="assets/js/project.js" charset="utf-8"></script>
     <script src="dist/main.chunk.js" charset="utf-8"></script>
     <script src="dist/runtime-main.bundle.js" charset="utf-8"></script>
+    <script>
+      window.addEventListener("message", (event) => {
+        // IMPORTANT: check the origin of the data!
+        if (event.origin === "https://www.mass.gov") {
+          // The data was sent from your site.
+          // Data sent with postMessage is stored in event.data:
+          console.log(event.data);
+        } else {
+          // The data was NOT sent from your site!
+          // Be careful! Do not use it. This else branch is
+          // here just for clarity, you usually shouldn't need it.
+          return;
+        }
+      });
+    </script>
   </body>
 </html>
