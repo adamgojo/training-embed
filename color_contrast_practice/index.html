@@ -15,7 +15,7 @@
     <script>
       window.addEventListener("message", (event) => {
         // IMPORTANT: check the origin of the data!
-        if (event.origin === "https://www.mass.gov") {
+        if (event.origin === "https://localhost") {
           // The data was sent from your site.
           // Data sent with postMessage is stored in event.data:
           console.log(event.data);
