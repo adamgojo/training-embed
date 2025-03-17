@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>An Accessible Webpage</title>
+    <link rel="stylesheet" href="example_style.css" />
+  </head>
+  <body>
+    <banner>
+      <div id="banner">
+        <div id="logo">
+          <img
+            src="https://www.mass.gov/libraries/mayflower-artifacts/assets/images/logo/stateseal.png"
+            alt="" />
+        </div>
+        <div class="bannertext">
+          A totally Unofficial website of the Commonwealth of Massachusetts
+        </div>
+      </div>
+      <a href="#content" class="skip-to-main-content-link"
+        >Skip to main content</a
+      >
+    </banner>
+    <nav aria-label="Main Navigation" class="mainNav">
+      <ul>
+        <li class="menu_item"><a href="https://google.com">Home</a></li>
+        <li class="menu_item"><a href="https://google.com">Living</a></li>
+        <li class="menu_item"><a href="https://google.com">Work</a></li>
+        <li class="menu_item"><a href="https://google.com">Cat Videos</a></li>
+        <li class="menu_item">
+          <a href="inaccessible_page_example.html">Inaccessible Version</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="content">
+      <main>
+        <h1>An Accessible Website</h1>
+        <img
+          src="img/accessible_hero.png"
+          class="hero_img"
+          alt="a man of color in a wheelchair sits working on the computer in an office" />
+        <div id="intro">
+          <p>
+            Accessibility is about creating inclusive digital experiences that
+            empower everyone, regardless of ability. Our mission is to ensure
+            that websites, applications, and digital content are usable by all,
+            including individuals with disabilities. From clear navigation and
+            readable text to assistive technology compatibility, we prioritize
+            accessibility best practices to make the web a more inclusive space.
+            Whether you're a business, developer, or content creator, we provide
+            the tools, resources, and expertise to help you build a more
+            accessible and user-friendly online experience for everyone.
+          </p>
+        </div>
+
+        <div class="cta-section">
+          <div class="cta-item">
+            <img
+              src="img/real_id_tile.png"
+              alt="An asian woman holds a Massachusetts Real ID drivers license" />
+          </div>
+          <div class="cta-item">
+            <div class="cta-text">
+              <h2>Get a Real ID</h2>
+
+              <p>
+                Beginning May 7, 2025, every air traveler 18 years of age and
+                older will need a REAL ID compliant driver's license or
+                identification card, or another TSA-acceptable form of
+                identification, for domestic air travel and to enter certain
+                federal facilities. TSA publishes a list of its acceptable
+                identification documents on the
+                <a href="https://www.tsa.gov/real-id">TSA Website</a>.
+              </p>
+
+              <a
+                class="cta-link"
+                tabindex="0"
+                id="realID"
+                href="https://www.mass.gov/info-details/massachusetts-identification-id-requirements"
+                >Apply for a Real ID</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <h2>What do you want to do today?</h2>
+        <div id="tiles">
+          <div class="tile">
+            <img src="img/transfer_tile.png" alt="" />
+            <div class="tilelink">
+              <a href="https://google.com"
+                >Transfer Vehicle Registration and Title</a
+              >
+            </div>
+          </div>
+          <div class="tile">
+            <img src="img/unemployment_tile.png" alt="" />
+            <div class="tilelink">
+              <a href="https://google.com">Get Unemployment Assistance</a>
+            </div>
+          </div>
+          <div class="tile">
+            <img src="img/fishing_tile.png" alt="" />
+            <div class="tilelink">
+              <a href="https://google.com">Find a Fishing Spot</a>
+            </div>
+          </div>
+        </div>
+
+        <h2>News Articles</h2>
+        <div id="articles">
+          <div class="article">
+            <img
+              src="img/sumner.png"
+              alt="cars wait in traffic in the sumner tunnel" />
+            <h3>
+              <a
+                href="https://www.mass.gov/news/sumner-tunnel-reopens-after-final-weekend-closure-of-restoration"
+                >Sumner Tunnel Reopens</a
+              >
+            </h3>
+            <p>
+              The Sumner Tunnel marked its final full weekend closure as part of
+              the restoration project. The project is now considered
+              substantially complete.
+            </p>
+          </div>
+          <div class="article">
+            <img
+              src="img/winter.png"
+              alt="a footbridge over the charles river covered with snow" />
+            <h3>
+              <a
+                href="https://www.mass.gov/info-details/winter-storm-safety-tips"
+                >Winter Storm Safety Tips</a
+              >
+            </h3>
+            <p>
+              Winter storms in New England can range from freezing rain and ice,
+              to a moderate snowfall over a few hours, to blizzard conditions
+              with blinding wind-driven snow that can last several days.
+            </p>
+          </div>
+          <div class="article">
+            <img src="img/taxes.png" alt="printed tax forms" />
+            <h3>
+              <a
+                href="https://www.mass.gov/info-details/massachusetts-current-tax-filing-season-overview"
+                >Tax Season Information</a
+              >
+            </h3>
+            <p>
+              Important information from the Department of Revenue for filing
+              your taxes.
+            </p>
+          </div>
+        </div>
+
+        <div class="formContent">
+          <h2>Tell us about yourself</h2>
+
+          <form>
+            <div id="formNameGroup">
+              <div id="formFirst">
+                <label id="firstNameLabel" for="firstName">First name</label>
+                <div>
+                  <input type="text" name="first-name" id="firstName" />
+                </div>
+              </div>
+              <div id="formLast">
+                <label id="lastNameLabel" for="lastName">Last name</label>
+                <div>
+                  <input type="text" name="lastName" id="lastName" />
+                </div>
+              </div>
+            </div>
+            <div id="formAddressGroup">
+              <div id="formAd1">
+                <label id="address1Label" for="address1">Address 1</label>
+                <div>
+                  <input type="text" name="address1" id="address1" />
+                </div>
+              </div>
+              <div id="formAd2">
+                <label id="address2Label" for="address2">Address 2</label>
+                <div>
+                  <input type="text" name="address2" id="address2" />
+                </div>
+              </div>
+            </div>
+            <div id="formCityStateGroup">
+              <div id="formCity">
+                <label id="cityLabel" for="city">City</label>
+                <div>
+                  <input type="text" name="city" id="city" />
+                </div>
+              </div>
+              <div id="formState">
+                <label id="stateLabel" for="state">State</label>
+                <div>
+                  <select id="state">
+                    <option disabled>-- choose a state --</option>
+                    <option>MA</option>
+                    <option>CT</option>
+                    <option>NH</option>
+                    <option>ME</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div id="formZipGroup">
+              <div id="formZip">
+                <label id="zipCodeLabel" for="zipCode">Zip Code</label>
+                <div class="hintText" id="zipCodeDesc">5-digit format</div>
+                <div>
+                  <input
+                    type="text"
+                    name="zip-code"
+                    id="zipCode"
+                    pattern="[0-9]{5}"
+                    aria-describedby="zipCodeDesc"
+                    maxlength="5" />
+                </div>
+              </div>
+            </div>
+
+            <div id="formEmailPhoneGroup">
+              <div id="formEmail">
+                <label id="emailLabel" for="email">Email</label>
+                <div>
+                  <input type="email" name="email" id="email" />
+                </div>
+              </div>
+              <div id="formPhone">
+                <label id="phoneLabel" for="phone">Phone</label>
+                <div>
+                  <input type="text" name="phone" id="phone" />
+                </div>
+              </div>
+            </div>
+            <br />
+            <input class="btn formSubmit" type="submit" value="Submit" />
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <footer id="footer">
+      <div class="footerContainer">
+        <div class="footerLogo">
+          <a href="/" title="Mass.gov home page">
+            <img
+              src="https://www.mass.gov/libraries/mayflower-artifacts/assets/images/logo/stateseal.png"
+              alt="Massachusetts State Seal" />
+          </a>
+        </div>
+
+        <div class="footerText">
+          <div
+            class="footerNavLinks"
+            role="navigation"
+            aria-label="footer navigation">
+            <ul>
+              <li><a href="/topics/massachusetts-topics">All Topics</a></li>
+              <li><a href="/massgov-site-policies">Site Policies</a></li>
+              <li>
+                <a href="/topics/public-records-requests"
+                  >Public Records Requests</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="copyright">
+            <p>
+              &copy; 2025 Commonwealth of Massachusetts.
+
+              <br />
+              Mass.gov&#x00AE; is a registered service mark of the Commonwealth
+              of Massachusetts.<a href="/privacypolicy"
+                >Mass.gov Privacy Policy</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const link = document.getElementById("realID");
+
+    link.addEventListener("keydown", function (event) {
+      if (event.key === " " || event.keyCode === 32) {
+        event.preventDefault();
+        window.location.href = link.href;
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,565 @@
+/* CSS styles only needed for CodePen Prototype */
+/************************************************/
+
+body,
+nav,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.5;
+  text-shadow: none;
+}
+
+/*Focus Styles*/
+
+.menu_item a:focus-visible {
+  outline: 2px solid white !important;
+  outline-offset: 4px;
+  border-radius: 1px;
+}
+
+.tile a:focus-visible {
+  outline: 2px solid white !important;
+  outline-offset: -4px;
+  border-radius: 5px;
+}
+
+.cta-link:focus-visible {
+  outline: 3px solid #388557;
+  outline-offset: 3px;
+}
+
+.btn:focus-visible {
+  outline: 3px solid #388557 !important;
+  outline-offset: 3px !important;
+  box-shadow: none !important;
+}
+
+.formSubmit:focus-visible {
+  outline: 3px solid #388557 !important;
+  outline-offset: 3px !important;
+  border-radius: 9999px;
+  box-shadow: none !important;
+}
+#articles a:focus-visible {
+  outline: 2px solid #14558f !important;
+  outline-offset: 4px;
+  border-radius: 1px;
+}
+
+.formContent input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #388557 !important;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px 2px #388557;
+}
+
+.skip-to-main-content-link {
+  position: absolute; /*Positions the link absolutely on the page, allowing it to be placed anywhere.*/
+  left: -9999px; /*Moves the link far off-screen to the left, making it invisible to sighted users.*/
+  z-index: 999; /*Sets a high z-index, ensuring that the link will be on top of other page elements if it becomes visible.*/
+  padding: 1em;
+  background-color: white;
+  color: white;
+  opacity: 0; /*Sets the link's opacity to 0, making it fully transparent and invisible.*/
+}
+
+.skip-to-main-content-link:focus {
+  left: 3%; /* When the link receives focus (e.g., when a keyboard user tabs to it), it is repositioned horizontally.*/
+  transform: translateX(
+    3%
+  ); /*This positions the link horizontally by moving it back to the left by X% of its own width.*/
+  opacity: 1; /*The link's opacity is set to 1, making it fully visible.*/
+}
+
+/*---------For Bad Example Page----------*/
+.menu_item_bad a:focus-visible {
+  outline: 2px solid blue !important;
+  outline-offset: 4px;
+  border-radius: 1px;
+}
+
+.nav {
+  margin: 0;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  border: 0;
+  line-height: 1.5;
+  text-shadow: none;
+  background-color: #14558f;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+.nav a {
+  color: white !important;
+  text-decoration: none;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.cta-link-bad {
+  display: inline-flex; /* makes full area clickable */
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background-color: #388557;
+  color: white !important;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.cta-link-bad a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cta-link-bad a:visited {
+  text-decoration: none;
+  color: white !important;
+}
+
+.cta-link-bad:focus-visible {
+  background-color: #32784e !important;
+}
+
+#formEmail input:focus::placeholder {
+  color: transparent;
+}
+
+.cta-section-bad {
+  display: block;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.cta-item-bad {
+  display: inline-block;
+  width: 500px;
+}
+.cta-text-bad {
+  display: block;
+  position: absolute;
+  margin-top: -400px;
+  margin-left: 20px;
+  width: 500px;
+}
+.cta-item-bad img {
+  border-radius: 5px;
+  width: 500px;
+}
+/*-----------------------Desktop Styles-----------------------*/
+
+#logo img {
+  width: 40px;
+  filter: brightness(0) invert(1);
+  float: left;
+}
+
+#banner {
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 10px;
+  background-color: #388557;
+  min-height: 50px;
+  padding-bottom: 5px;
+}
+
+.bannertext {
+  padding-top: 5px;
+  position: relative;
+  color: white;
+  margin-left: 60px;
+  margin-top: 5px;
+}
+
+nav {
+  background-color: #14558f;
+  height: 60px;
+  padding-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 24px;
+}
+
+nav a {
+  color: white !important;
+  text-decoration: none;
+}
+
+a {
+  color: #14558f !important;
+  display: inline-block;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; /* $ds-text-body-copy */
+  line-height: 24px;
+  color: #333333; /* $ds-color-text-dark */
+}
+
+.hero_img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cta-section,
+#articles,
+#tiles {
+  padding-bottom: 40px;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 1.5rem;
+}
+
+a {
+  text-decoration: underline;
+  color: #b83100;
+}
+/*a:hover {
+  text-decoration: none;
+}
+  */
+.cta-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.cta-item {
+  max-width: 500px;
+  position: relative;
+}
+.cta-text {
+  margin-top: -38px;
+}
+.cta-item img {
+  flex-basis: auto;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.cta-link {
+  display: inline-flex; /* makes full area clickable */
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background-color: #388557;
+  color: white !important;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.cta-link a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.cta-link a:visited {
+  text-decoration: none;
+  color: white !important;
+}
+
+.cta-item a:hover {
+  text-decoration: underline;
+}
+
+#tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tile {
+  display: inline-block;
+  position: relative;
+  flex-basis: auto;
+}
+
+.tile a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tile img {
+  max-width: 366px;
+}
+
+.tilelink a {
+  box-sizing: border-box;
+  width: 100%;
+  color: white !important;
+  text-decoration: none;
+  margin-top: -10px;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-left: 20px;
+  background-color: #14558f;
+  height: 40px;
+}
+
+.tilelink a:hover {
+  text-decoration: underline;
+}
+
+#articles {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.article {
+  max-width: 333px;
+  min-height: 400px;
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgba(238, 238, 238, 0.5);
+  margin: 0 auto;
+  margin-bottom: 15px;
+  border: 1px solid #e6e6e6;
+}
+.article img {
+  max-width: 333px;
+  border-radius: 5px;
+}
+
+/*footer styles */
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2 !important;
+  font-size: 1rem;
+}
+
+.footerContainer {
+  max-width: 1100px;
+  margin-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.footerLogo img {
+  width: 100px;
+  height: 100px;
+  padding-right: 75px;
+  padding-top: 20px;
+}
+
+.footerText {
+  padding-top: 20px;
+  color: #6b6b6b;
+}
+
+.footerNavLinks ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 18px;
+  padding-bottom: 0.4rem;
+  margin-left: -0.5rem;
+}
+
+footer a {
+  color: #14558f !important;
+  margin: 10px;
+  display: inline;
+}
+
+/*form styles*/
+
+.formContent {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 5px 10px 20px 100px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0px 0px 5px 5px rgba(238, 238, 238, 0.5);
+  margin: 0 auto;
+}
+
+form {
+  margin: 0 auto;
+}
+
+#formNameGroup,
+#formAddressGroup,
+#formCityStateGroup,
+#formEmailPhoneGroup {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex; /* makes full area clickable */
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background-color: #388557;
+  color: white !important;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.formSubmit {
+  border-radius: 9999px !important;
+  background-color: #388557;
+  color: white !important;
+  font-size: 18px;
+}
+
+input,
+select {
+  min-width: 200px;
+  min-height: 30px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: 1px solid #909090;
+  padding-bottom: 10px;
+}
+
+select {
+  min-height: 47px;
+}
+
+#formEmail input {
+  min-width: 300px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 1em;
+}
+
+label span.hintTextInline {
+  font-weight: normal;
+}
+.hintText {
+  padding: 0.25rem 0;
+}
+
+/*-----------------------Mobile Styles-----------------------*/
+@media only screen and (max-width: 600px) {
+  .cta-item img {
+    padding-bottom: 30px;
+  }
+
+  .article {
+    width: 90%;
+    margin-left: 5%;
+  }
+  .article img {
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .formContent {
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 40px;
+  }
+
+  .footerContainer {
+    display: block;
+    padding-left: 15px;
+  }
+  .footerLogo img {
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+  }
+
+  .footerText {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .footerNavLinks ul {
+    display: block;
+    list-style: none;
+    font-size: 18px;
+    padding-bottom: 0.4rem;
+    margin-left: -0.5rem;
+  }
+}
